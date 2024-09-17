@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Jokes</title>
+    <link href="style.css" rel="stylesheet"></link>
+    <style>
+        #image{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <p class="center"> "Hi Mr. Astronaut, I just heard that you broke up with your girlfriend. Why?"</p>
+    <div class="project__container">
+        <button onclick="playtext()" class="buttonplace"> Well... </button>
+    <h1 class="center" id="textplace" style="display:none;"> I told her that I need some space.  </h1>
+
+    </div>
+    <div class="project__container">
+        <h2 class="center"> want more puns jokes? </h2>
+        <img id="image" src="CATCHY.jpg" width="400" height="400" alt="What musics do you listen when fishing? Something CATCHY."/>
+    
+    <button class="buttonplace" type="button" onclick="show()" id="buttonID"> CLICK HERE </button>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        function show() {
+            document.getElementById('image')
+                .style.display = "block";
+            document.getElementById('buttonID')
+                .style.display = "none";
+        }
+    </script>
+</body>
+</html>
