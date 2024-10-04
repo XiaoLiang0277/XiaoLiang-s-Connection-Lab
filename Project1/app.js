@@ -5,7 +5,10 @@ function playtext() {
     text.style.display = "block";
   }
 
-
+function playtext2() {
+    var text = document.getElementById("textplace2");
+    text.style.display = "block";
+  }
 
 function showcatchy() {
     document.getElementById('catchy')
@@ -20,3 +23,4 @@ function showspider() {
   document.getElementById('spidersID')
       .style.display = "none";
 }
+

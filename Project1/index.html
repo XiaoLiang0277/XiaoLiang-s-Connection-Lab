@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Some Jokes</title>
+    <title>BMW FACTS</title>
     <link href="style.css" rel="stylesheet"></link>
+    <div class="border-frame"></div>
     <style>
         #catchy{
             display:none;
@@ -12,31 +13,40 @@
         #spiders{
             display:none;
         }
+    
     </style>
 </head>
 <body>
-    <p class="center"> "Hi Mr. Astronaut, I just heard that you broke up with your girlfriend. Why?"</p>
-    <div class="project__container">
-        <button onclick="playtext()" class="buttonplace"> Well... </button>
-    <h1 class="center" id="textplace" style="display:none;"> I told her that I need some space.  </h1>
+    <script>
+        fetch('DATASET')
+    .then(response => response.json())
+            .then(data => {
+                const numberToShow = data.data[];
+                document.getElementById("number-display").innerText = numberToShow;
+            })
+    </script>
 
-    </div>
+    <p class="center"> Peak Player Amount in Black Myth: WuKong </p>
     <div class="project__container">
-        <h2 class="center"> like musics? </h2>
-        <img id="catchy" src="CATCHY.jpg" width="500" height="500" alt="What musics do you listen when fishing? Something CATCHY."/>
-    
-    <button class="buttonplace" type="button" onclick="showcatchy()" id="catchyID"> CLICK HERE </button>
-    </div>
+        <button onclick="playtext()" class="buttonplace"> IS... </button>
+    <h1 class="center" id="textplace" style="display:none;"> 2415714 </h1>
 
-    </div>
-    <div class="project__container">
-        <h2 class="center"> Well, some fun fact about spiders... </h2>
-        <img id="spiders" src="SPIDERS.jpg" width="500" height="500" alt="As we all know, spiders may be the only kind of web designers who loves finding bugs"/>
+   
 
-    <button class="buttonplace" type="button" onclick="showspider()" id="spidersID"> CLICK HERE </button>
-    </div>
+    <div class="project__container"></div>
+        <button onclick="playtext2()" class="buttonplace"> What is Black Myth: Wukong? </button>
+    <h1 class="center2" id="textplace2" style="display:none;"> Black Myth: Wukong is a 2024 action role-playing game developed and published by Game Science. The game is inspired by the classical Chinese novel Journey to the West and follows an anthropomorphic monkey based on Sun Wukong from the novel.
+        Black Myth: Wukong was released for PlayStation 5 and Windows on August 20, 2024, with an Xbox Series X/S version and an expansion planned for release. The game received generally favorable reviews from critics. It sold 18 million units within two weeks, making it one of the fastest-selling games of all time. </h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pnSsgRJmsCc?si=mJtjZ0MtERnFguiW" frameborder="0" allowfullscreen></iframe>
+      </iframe>
+    <a href="https://steamdb.info/app/2358720/charts/">
+        <button class="buttonsize">See more Information on Steam </button>
+      </a>
 
     <script src="app.js"></script>
     
 </body>
 </html>
+
+
