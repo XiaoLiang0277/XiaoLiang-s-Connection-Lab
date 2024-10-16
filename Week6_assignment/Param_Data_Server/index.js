@@ -5,14 +5,17 @@ let shabiList = {
     "data" : [
         {
             name : "bangzi",
+            level : "123",
             info : "shabi No.1" 
         },
         {
             name : "sandaimu",
+            level : "312",
             info : "shabi No.2"
         },
         {
             name : "fengyange",
+            level : "321",
             info : "shabi No.3"
         }
     ]
@@ -37,12 +40,14 @@ app.get('/shabiList/:shabi', (req,res)=> {
         if(user_param == shabiList.data[i].name){
             user_obj = shabiList.data[i];
         }
+    }
     console.log(user_obj);
     res.send("thank you");
-
-    }
-
 })
+
+
+app.use('/',express.static('public'));
+
 
 app.listen(3000, ()=>{
     console.log("app is listening at localhost:3000") ;
